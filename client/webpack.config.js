@@ -61,7 +61,8 @@ module.exports = () => {
             options: {
               presets: [
                 ['@babel/preset-env', { targets: "defaults" }]
-              ]
+              ],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             }
           }
         }
